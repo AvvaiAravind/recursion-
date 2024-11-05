@@ -26,7 +26,7 @@ console.log(fibonacciLoop(77));
 console.log(fibonacciLoop(0));
 console.log(fibonacciLoop(1));
 console.log(fibonacciLoop(-7));
- 
+
 function fibsRec(n) {
   let array = [];
 
@@ -37,7 +37,7 @@ function fibsRec(n) {
   } else if (n === 2) {
     array.push(0, 1);
   } else {
-    array = fibsRec(n - 1); // which is a array so finding lenght to calculat
+    array = fibsRec(n - 1); // which is a array so finding length to calculate for further proceedings
     let length = array.length;
     const newValue = array[length - 1] + array[length - 2];
     array.push(newValue);
